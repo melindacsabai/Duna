@@ -1,0 +1,35 @@
+@import "variables";
+@import "second";
+@import "header";
+@import "footer";
+@import "section";
+@import "form";
+
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+
+    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+    box-sizing: border-box;
+
+}

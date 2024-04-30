@@ -1,0 +1,140 @@
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.4),
+            rgba($color-primary-dark, 0.4)),
+        url(../img/duna.jpg);
+    background-image: url(../img/duna.jpg);
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &-nav{
+
+        &-ul{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        
+        a{
+            padding: 2rem 4rem 0 4rem;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 400;
+            font-style: italic;
+            color: $color-grey-light-1;
+    
+        }
+        }
+    }
+
+    &-logo {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color:rgba($color-grey-light-1, .7);
+        font-size: 3rem;
+    }
+
+    &-text-box {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 120rem;
+    }
+}
+
+.heading-primary {
+
+    &-main {
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+        animation: moveInLeft 2s ease-out;
+        color: #858585;
+        
+    }
+
+    &-sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.74rem;
+        animation: moveInRight 2s ease-in;
+        color: #9b9b9b;
+    }
+
+
+}
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+
+.section-about {
+    background-color: $color-grey-light-1;
+    padding-top: 25rem;
+    padding-bottom: 10rem;
+    margin-top: -20vh;
+
+
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    padding-bottom: 10rem;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+}

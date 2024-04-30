@@ -1,0 +1,183 @@
+.gallery{
+    div{
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    border: 1rem solid white;
+    @media screen and (min-width: 1025px){
+        height: 25rem;
+    }
+
+    }
+
+    @media screen and (min-width: 768px){
+       
+        display: grid;
+        grid-template-areas:
+        "one two"
+        "three three"
+        "four four"
+        "four four"
+        "five six"
+        "seven eight"
+        "nine eight"
+        "nine ten" ;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows:repeat(8, 20rem);
+    }
+    @media screen and (min-width: 1025px){
+        display: grid;
+        grid-template-areas:
+        "one two three"
+        "four four five"
+        "six six five"
+        "six six seven"
+        "eight nine seven"
+        "ten ten ten" ;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows:repeat(6, 25rem);
+    }
+    @media screen and (min-width: 1280px){
+        display: grid;
+        grid-template-areas:
+        "one two three four"
+        "five five six four"
+        "five five six four"
+        "eight eight six nine"
+        "eight eight ten ten"
+        "seven seven ten ten ";
+
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows:repeat(6, 25rem);
+    }
+
+}
+.one {
+    grid-area: one;
+    background-image: url(../../images/norbert-buduczki-PqLx6AuP6DA-unsplash.jpg);
+    @media screen and (min-width: 768px){
+    row-gap:2rem;
+    }
+  }
+  
+  .two {
+    grid-area: two;
+    background-image: url(../../images/regos-kornyei-43KRInYSpqQ-unsplash.jpg);
+    background-position: 25% 25%;
+    
+  }
+  
+  .three {
+    grid-area: three;
+    background-image: url(../../images/mali-desha-ivV8zNrcMgY-unsplash.jpg);
+
+    @media screen and (min-width: 768px){
+        background-position: bottom;
+    }
+
+  }
+  
+  .four {
+    grid-area: four;
+    background-image: url(../../images/anya-petrovic-vzpq2l84f_o-unsplash\ \(1\).jpg);
+    @media screen and (min-width: 1025px){
+       background-position: bottom;
+     }
+   
+  }
+  
+  .five {
+    grid-area: five;
+    background-image: url(../../images/wyatt-harrom-ic2OZ8-u64M-unsplash.jpg);
+    background-position: 25% 37%;
+   
+  }
+  
+  .six {
+    grid-area: six;
+    background-image: url(../../images/razvan-mirel-rFbr1hYk0SY-unsplash.jpg);
+    background-position: 25% 45%;
+    @media screen and (min-width: 1025px){
+        background-position: 25% 30%;
+      }
+  }
+  
+  .seven {
+    grid-area: seven;
+    background-image: url(../../images/ali-kazal-zj2Pkq_bkGQ-unsplash.jpg);
+    background-position: 25% 60%;
+  }
+  
+  .eight {
+    grid-area: eight;
+    background-image: url(../../images/norbert-buduczki-19efmZzBkUM-unsplash.jpg);
+    background-position: 25% 60%;
+
+  }
+  
+  .nine {
+    grid-area: nine;
+    background-image: url(../../images/sami-ullah-KO4eRZ28nuI-unsplash.jpg);
+
+    background-position: 25% 87%;
+  }
+  
+  .ten {
+    grid-area: ten;
+    background-image: url(../../images/joachim-pressl-JzLzw-GhDME-unsplash\ \(1\).jpg);
+    background-position: 25% 60%;
+    @media screen and (min-width: 1025px){
+        background-position: 25% 70%;
+      }
+
+  }
+
+  .four.big{
+    @media screen and (min-width: 768px){
+       height: 40rem;
+    }
+    @media screen and (min-width: 1280px){
+        height: 75rem;
+    }
+  }
+  .nine.big{
+    @media screen and (min-width: 768px){
+       height: 40rem;
+    }
+  
+  }
+  .eight.big{
+    @media screen and (min-width: 768px){
+       height: 40rem;
+    }
+    @media screen and (min-width: 1280px){
+        height: 50rem;
+    }
+  }
+  .five.big{
+    @media screen and (min-width: 1025px){
+       height: 50rem;
+    }
+  }
+  .six.big{
+    @media screen and (min-width: 1025px){
+       height: 50rem;
+    }
+    @media screen and (min-width: 1280px){
+        height: 75rem;
+    }
+  }
+  .seven.big{
+    @media screen and (min-width: 1025px){
+       height: 50rem;
+    }
+    @media screen and (min-width: 1280px){
+        height: 25rem;
+        background-position: 25% 55%;
+    }
+  }
+  .ten.big{
+    @media screen and (min-width: 1280px){
+        height: 50rem;
+    }
+  }

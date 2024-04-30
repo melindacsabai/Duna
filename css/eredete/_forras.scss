@@ -1,0 +1,118 @@
+.eredete-section {
+
+    h2 {
+        @include colorRain( #bdbdbd, #888686);
+        padding: 5rem 2rem 0rem 2rem;
+        position: relative;
+        top: -3rem;
+        background-color: $color-grey-light-1;
+        width: 100%;
+        font-size: 3rem;
+
+        @media screen and (min-width: 1025px) {
+            padding: 0;
+            position: relative;
+            top: -0;
+            background-color: none;
+            font-size: 4rem;
+            color: $color-grey-medium;
+            @include colorRain(#cbcbcb, $color-black);
+        }
+    }
+
+    &-div-1 {
+        background-color: $color-grey-light-1;
+        padding: 2rem 2rem 2rem 2rem;
+        text-align: center;
+        font-style: oblique;
+
+
+    }
+
+    h3 {
+        color: #9b9b9b;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0 2rem 0;
+        font-size: 2.5rem;
+
+
+    }
+
+    p {
+        background-color: $color-grey-light-1;
+        text-align: center;
+        padding: rem 2rem 2rem 2rem;
+        margin-bottom: 2rem;
+
+
+        strong {
+            padding: 2rem 0 2rem 0;
+
+        }
+    }
+
+    img {
+        width: 100%;
+        padding: 1rem 0rem 0rem 0rem;
+
+
+        }
+        figure {
+            padding: 1rem 0rem 4rem 0rem;
+            width: 100%;
+
+
+        }
+
+        h4 {
+    
+            text-align: center;
+            margin-bottom: 2rem;
+
+        }
+    
+}
+
+.h4-first {
+    margin-bottom: 3rem;
+}
+
+.vita {
+    margin-bottom: 3rem;
+}
+
+.summa {
+    background-color: white;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    @media screen and (min-width: 1025px){
+       position: relative;
+       top:-15rem;
+        padding: 2rem 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+ 
+    }
+
+
+
+}
+
+.btn {
+    @include button($color-grey-medium);
+  
+    
+}

@@ -1,0 +1,226 @@
+
+.rotate-card {
+
+    background-image:
+        linear-gradient(to right bottom,
+            rgba($color-grey-light-1, 0.8),
+            rgba($color-grey-dark, 0.8)),
+        url(../../images/dunaduna.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6rem 0 6rem 0;
+
+
+    @media screen and (min-width:1025px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10rem 0 10rem 0;
+        background-position: 10% 59%;
+
+    }
+
+    .flip-card {
+        width: 30rem;
+        height: 50rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+
+        &-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 3px;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        }
+
+        &-front {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: opacity .5s linear;
+            z-index: 1;
+            background-color: #f7f7f7;
+
+            &:hover {
+                opacity: 0;
+            }
+
+            .card-heading {
+                font-size: 2.8rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color-white;
+                position: absolute;
+                top: 6rem;
+                left: 2rem;
+
+            }
+
+            .card-details {
+
+                padding: 6rem 2rem 2rem 2rem;
+
+                ul {
+
+                    text-align: center;
+                    list-style: none;
+                    padding-top: .5rem;
+
+                    @media screen and (min-width:1025px) {
+                        font-size: 1.4rem;
+
+                    }
+
+                    li {
+                        font-size: 1.3rem;
+                        padding-top: .5rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    text-align: center;
+                    
+
+                    @media screen and (min-width:1025px) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .card-picture-1 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-card1-light, 0.8),
+                        rgba($color-card1-dark, 0.8)),
+                    url(../../images/naplementes.jpg);
+                background-position: bottom;
+                background-size: cover;
+                height: 40%;
+                background-blend-mode: screen;
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            }
+
+            .card-picture-2 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-card2-light, 0.8),
+                        rgba($color-card2-dark, 0.8)),
+                    url(../../images/duna5.jpg);
+                background-position: left;
+                background-size: cover;
+                height: 40%;
+                background-blend-mode: screen;
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            }
+
+            .card-picture-3 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-primary-light, 0.8),
+                        rgba($color-primary-dark, 0.8)),
+                    url(../../images/evezve.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 40%;
+                background-blend-mode: screen;
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+            }
+        }
+
+        &-back {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+           
+
+            &-one {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-card1-light, 0.8),
+                        rgba($color-card1-dark, 0.8)),
+                    url(../../images/naplementes.jpg);
+                background-position: bottom;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: inherit;
+                height: inherit;
+
+                p {
+                    color: white;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                    margin: 1rem;
+                }
+
+
+                @media screen and (min-width:1025px) {
+                    font-size: $default-font-size;
+                }
+            }
+
+            &-two {
+
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-card2-light, 0.8),
+                        rgba($color-card2-dark, 0.8)),
+                    url(../../images/duna5.jpg);
+                background-position: top;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                width: inherit;
+                height: inherit;
+
+                p {
+                    color: white;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                    padding: 0 2rem 0rem 2rem;
+                    text-align: center;
+                }
+
+            }
+
+
+            &-three {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-primary-light, 0.8),
+                        rgba($color-primary-dark, 0.8)),
+                    url(../../images/evezve.jpg);
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: inherit;
+                height: inherit;
+
+                p {
+                    color: white;
+                    font-size: 1.8rem;
+                    padding: 4rem 2rem 2rem 2rem;
+
+                }
+
+            
+
+            }
+
+
+        }
+    }
+
+}
+
